@@ -1,0 +1,17 @@
+from pyngrok import ngrok
+import subprocess
+import time
+
+# Start the Streamlit app
+subprocess.Popen(["streamlit", "run", "G:\\Courses\\Sprints_ML\\Project\\ui\\app.py"])
+
+# Wait a bit for it to launch
+time.sleep(5)
+
+# Open ngrok tunnel
+public_url = ngrok.connect(8501)
+print("Your app is live at:", public_url)
+
+while True:
+    time.sleep(1)
+
