@@ -33,7 +33,8 @@ FINAL_VOTING_MODEL2_PATH = MODELS_DIR / "final_voting_model2.pkl"
 FINAL_VOTING_MODEL3_PATH = MODELS_DIR / "final_voting_model3.pkl"
 FINAL_VOTING_MODEL6_PATH = MODELS_DIR / "final_voting_model6.pkl"
 FINAL_VOTING_MODEL7_PATH = MODELS_DIR / "final_voting_model7.pkl"
-
+FINAL_VOTING_MODEL8_PATH = MODELS_DIR / "final_voting_model8.pkl"
+FINAL_VOTING_MODEL9_PATH = MODELS_DIR / "final_voting_model9.pkl"
 # UI specific paths
 EXPECTED_FEATURES_PATH = UI_DIR / "expected_features.txt"
 

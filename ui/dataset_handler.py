@@ -11,7 +11,7 @@ from pathlib import Path
 
 # Add parent directory to path to import config
 sys.path.append(str(Path(__file__).parent.parent))
-from config import FINAL_VOTING_MODEL_PATH, EXPECTED_FEATURES_PATH
+from config import FINAL_VOTING_MODEL_PATH, EXPECTED_FEATURES_PATH, FINAL_VOTING_MODEL9_PATH
 
 def load_uci_data(file_path):
     column_names = [
@@ -91,7 +91,7 @@ def process_file(filepath):
 
     X_aligned = align_features_for_prediction(X)
 
-    model = joblib.load(FINAL_VOTING_MODEL_PATH)
+    model = joblib.load(FINAL_VOTING_MODEL9_PATH)
     encoded_data["Prediction"] = model.predict(X_aligned)
 
     return encoded_data

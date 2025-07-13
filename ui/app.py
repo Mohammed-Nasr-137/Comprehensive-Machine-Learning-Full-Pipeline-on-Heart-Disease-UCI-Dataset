@@ -23,13 +23,13 @@ from pathlib import Path
 
 # Add parent directory to path to import config
 sys.path.append(str(Path(__file__).parent.parent))
-from config import FINAL_VOTING_MODEL_PATH, EXPECTED_FEATURES_PATH
+from config import FINAL_VOTING_MODEL_PATH, EXPECTED_FEATURES_PATH, FINAL_VOTING_MODEL9_PATH
 
 st.set_page_config(layout="wide")
 st.title("💖 Heart Disease ML Project Dashboard")
 
 # Load trained model
-model = joblib.load(FINAL_VOTING_MODEL_PATH)
+model = joblib.load(FINAL_VOTING_MODEL9_PATH)
 
 # Sidebar
 section = st.sidebar.selectbox("Select Section", ["Supervised Learning", "Unsupervised Clustering"])
