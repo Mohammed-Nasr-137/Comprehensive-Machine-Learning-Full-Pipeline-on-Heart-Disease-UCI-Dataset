@@ -23,7 +23,7 @@ A full-stack machine learning project for detecting heart disease based on UCI d
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/heart-disease-app.git
+git clone https://github.com/Mohammed-Nasr-137/Comprehensive-Machine-Learning-Full-Pipeline-on-Heart-Disease-UCI-Dataset
 cd heart-disease-app
 ```
 
